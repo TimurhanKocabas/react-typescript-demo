@@ -1,15 +1,11 @@
-import { ThemeContextProvider } from "./components/context/ThemeContext";
-import { Box } from "./components/context/Box";
 import "./App.css";
-import { UserContextProvider } from "./components/context/UserContext";
-import { User } from "./components/context/User";
+
+import Counter from "./components/class/CounterX";
 
 function App() {
   return (
     <div className="App">
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
+      <Counter message="The count value is" />
     </div>
   );
 }
